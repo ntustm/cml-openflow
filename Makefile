@@ -1,32 +1,24 @@
 ###########################################################
-#
-#  NetFPGA-1G-CML http://www.netfpga.org
-#
 #  File:
 #        Makefile
-#
 #  Project:
-#        openflow_switch_nf1_cml
-#
+#        openflow-cml
 #  Author:
 #        Chu,Teng-Wei
-#
 #  Description:
-#        make : 
-#
-#        make clean : 
-#
+#        make : 		Generate bitfile
+#		 make download: Power on NetFPGA-CML and run this to download bitfile
+#        make clean : 	clean all generation files
 
 SYSTEM = system
 HW = hw
 SW = sw
-PROJECT_NAME = openflow_switch_nf1_cml
+PROJECT_NAME = openflow_cml
 
 all: 
-	$(MAKE) -C $(HW)
-	$(MAKE) -C $(SW)
+	$(MAKE) -C $(HW) bits
 	mkdir -p bitfiles
-	cp $(SW)/result/download.bit bitfiles/$(PROJECT_NAME).bit
+	cp $(HW)/implementation/system.bit bitfiles/$(PROJECT_NAME).bit
 
 download: bitfiles/$(PROJECT_NAME).bit
 	cp bitfiles/$(PROJECT_NAME).bit bitfiles/download.bit
@@ -35,6 +27,5 @@ download: bitfiles/$(PROJECT_NAME).bit
 
 clean:
 	$(MAKE) -C $(HW) clean
-	$(MAKE) -C $(SW) clean
 	rm -f bitfiles/
 
