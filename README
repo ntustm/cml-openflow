@@ -8,7 +8,7 @@
 CATALOG:
   1. Introduction
   2. Enviroment Set-up
-      2.1 Board
+      2.1 Device
       2.2 OS/Tools
   3. Build Project
       3.1 Hardware Part
@@ -24,17 +24,17 @@ CATALOG:
 | 1. Introduction
 +-----------------------------------------------------------------------
   The OpenFlow Swtich contains hardware datapath implemented on NetFPGA-CML,
-and software openflow-agent implemented on PC. NetFPGA-CML is plugged into 
-PC with PCI-e interface. Hardware datapath matains Flow Table to make forwarding
-decision, as well as Flow Table can be modified by controller through OpenFlow Prot.
-OpenFlow agent is responsible to translate OpenFlow protocol to specific operation
-on hardware.
+and software client implemented on PC. NetFPGA-CML is plugged into PC with 
+PCI-e interface. Hardware datapath matains Flow Table to make forwarding
+decision, as well as Flow Table can be modified by controller through 
+OpenFlow Protocol. OpenFlow agent is responsible to translate OpenFlow 
+message packets to specific operations on hardware.
    __________________
   |    Controller    |
   |__________________|
   OpenFlow | Protocol
    ________↓_________
-  |  OpenFlow-Agent  |
+  |  client software |
   |  Hardware Library|
   |  Driver          |
   |__________________|
@@ -47,11 +47,27 @@ Fig. Full System Overview
 +-----------------------------------------------------------------------
 | 2. Enviroment Set-up
 +-----------------------------------------------------------------------
+** 2.1 Device
 
+** 2.2 OS/Tools
+OS:     Fedora 20/Kernel
+Env:    Xilinx 14.6, gcc
+Tools:  git, wireshark-gnome, iperf, python
+Fedora use
+          echo y|yum install gcc git
+git clone git://github.com/ntustm/cml-openflow.git
 
 +-----------------------------------------------------------------------
 | 3. Build Project
 +-----------------------------------------------------------------------
+** 3.1 Hardware Part
+
+
+** 3.2 Software Part
+
+
+** 3.3 Controller
+
 
 
 +-----------------------------------------------------------------------
