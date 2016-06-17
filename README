@@ -14,8 +14,8 @@ CATALOG:
       3.1 Hardware Part
       3.2 Software Part
       3.3 Controller
-  4. Run
-  
+  4. Running
+  5. Contact
   Appx.I  File Tree
   Appx.II  
  
@@ -23,7 +23,26 @@ CATALOG:
 +-----------------------------------------------------------------------
 | 1. Introduction
 +-----------------------------------------------------------------------
-
+  The OpenFlow Swtich contains hardware datapath implemented on NetFPGA-CML,
+and software openflow-agent implemented on PC. NetFPGA-CML is plugged into 
+PC with PCI-e interface. Hardware datapath matains Flow Table to make forwarding
+decision, as well as Flow Table can be modified by controller through OpenFlow Prot.
+OpenFlow agent is responsible to translate OpenFlow protocol to specific operation
+on hardware.
+   __________________
+  |    Controller    |
+  |__________________|
+  OpenFlow | Protocol
+   ________↓_________
+  |  OpenFlow-Agent  |
+  |  Hardware Library|
+  |  Driver          |
+  |__________________|
+      PCIe | 
+   ________↓_________
+  |    Datapath      |
+  |__________________|
+Fig. Full System Overview
 
 +-----------------------------------------------------------------------
 | 2. Enviroment Set-up
@@ -36,7 +55,12 @@ CATALOG:
 
 
 +-----------------------------------------------------------------------
-| 4. Run
+| 4. Running
++-----------------------------------------------------------------------
+
+
++-----------------------------------------------------------------------
+| 4. Contact
 +-----------------------------------------------------------------------
 
 
