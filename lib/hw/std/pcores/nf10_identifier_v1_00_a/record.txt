@@ -1,0 +1,29 @@
+-- 02.11.2015 --
+[1553576.661124] nf10: releasing private memory
+[1553576.716499] nf10: releasing mem region
+[1553576.716508] nf10: disabling device
+[1553576.716687] nf10: module unloaded
+[1553596.533477] nf10: module loaded
+[1553596.533494] nf10 0000:04:00.0: enabling device (0000 -> 0002)
+[1553596.533534] nf10 0000:04:00.0: enabling bus mastering
+[1553596.533558] nf10 0000:04:00.0: irq 49 for MSI/MSI-X
+[1553596.533567] nf10: Reserving memory region for NF10
+[1553596.533569] nf10: mapping cfg memory
+[1553596.533578] nf10: mapping mem memory
+[1553596.535385] nf1_cml: Bitfile implemented on 23:59:59 on 31/12/1969
+[1553596.535388] nf1_cml: Project ID code: ff:1:3fff 
+[1553596.535388] nf1_cml: No project identified!
+[1553596.535389] nf1_cml: This is a reference project
+[1553596.535389] nf1_cml: DMA version is unidentified !
+[1553596.535390] nf1_cml: Phy requires initialization by the driver
+[1553596.535390] nf1_cml: This project has registers in the pipeline
+[1553596.535391] nf1_cml: Test suite is available for the project
+[1553596.535391] nf1_cml: Cannot determine the tool flow for the project!
+[1553596.535393] nf1_cml: NetFPGA GitHub Tag : f.f.f
+[1553596.535395] nf1_cml: Board Revision number is    : ff
+[1553596.535395] nf1_cml: Board idenfification id is  : ff
+[1553596.535396] nf1_cml: Board PCB version is        : ff
+[1553596.535396] nf1_cml: Board Assembly number is    : ff
+[1553596.535397] nf1_cml: Board can't be identified!
+[1553596.536090] nf10: device ready
+
