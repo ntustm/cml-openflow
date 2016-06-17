@@ -55,7 +55,7 @@ Env:    Xilinx 14.6, gcc
 Tools:  git, wireshark-gnome, iperf, python
 Fedora use
           echo y|yum install gcc git
-git clone git://github.com/ntustm/cml-openflow.git
+git clone https://github.com/ntustm/cml-openflow.git
 
 +-----------------------------------------------------------------------
 | 3. Build Project
