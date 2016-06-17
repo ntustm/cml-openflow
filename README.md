@@ -1,2 +1,3 @@
 # cml-openflow
-OpenFlow Switch Based on NetFPGA-CML
+AUTHOR: Chu,Teng-Wei<br>
+E-MAIL: temwei.chu@gmail.com<br>
