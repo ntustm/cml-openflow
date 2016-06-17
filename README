@@ -1,3 +1,13 @@
-# cml-openflow
-AUTHOR: Chu,Teng-Wei<br>
-E-MAIL: temwei.chu@gmail.com<br>
++------------------------------------------------------------------------
+| Author: Chu, TengWei
+| Description: OpenFlow switch design based on NetFPGA-CML, 
+|              referred to Yabe's OpenFlow-10g
++------------------------------------------------------------------------
+
+CATALOG:
+  1. Intro
+  2. Enviroment Set-up
+  3. Build
+  4. Run
+  5. File Tree
+ 
